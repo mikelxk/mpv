@@ -215,10 +215,13 @@ jobs:
         cxx:
           - "clang++"
         os:
+          - "macos-10.15"
           - "macos-13"
           - "macos-14"
           - "macos-15"
         include:
+          - os: "macos-10.15"
+            arch: "intel"
           - os: "macos-13"
             arch: "intel"
           - os: "macos-14"
